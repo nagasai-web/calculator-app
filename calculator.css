@@ -1,0 +1,60 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cal {
+  background: aquamarine;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Display */
+.vis input {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+/* Buttons layout using grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: #c2d4f2;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a9c4e8;
+}
+
+/* Equal button */
+.eql {
+  grid-column: span 2;
+  background: orange;
+  color: white;
+}
